@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* reset */
+*{margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+ul,li,ol{
+    list-style: none;
+}
+a{text-decoration: none;color: inherit;}
+
+.list{
+    border: 1px solid red;
+    overflow: hidden;
+    /* ul은 블럭 구조 */
+    /* 부모는 width 100% 상속 받아옴;
+    *상속 안되는 경우 : flot ,position,flex,grid
+
+    높이는 부모의 높이를 상속이 안된다
+
+    내용있다 : 높이는 내용만큼만 생성
+    내용없다 : 너비 높이가 없다
+
+    부모의 width100% 상속받았고
+    자신 width 100%를 다사용하면
+    margin : 0 auto는 
+    부모의 100%중에 내 width를 일부만 사용할 경우 가운데 정렬 */
+}
+.list li{
+    display: inline-block;
+    
+    border: 1px solid black;
+    float: left;
+
+}
+.list li a{
+    /* 인라인 구조 span b input textarea button */
+    /* width: 내용만큼;
+    height: 내용만큼;
+    /* width height: 입력하면 안먹힘; */
+
+
+
+}
+/* flex */
+.list2{
+    border:1px solid greenyellow;
+    display: flex;
+    /* flex-direction : row ;기본 */
+    /* flex-direction: colum; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+
+}
+.list2 li{border:  1px solid red;
+height: 80px;}
+.list2 li a{display: block;
+padding: 10px 30px;
+background-color: wheat;
+height: 100%;}
+
+.list3 li{border: 1px solid blue;}
+
+.bg{
+    background-color: hotpink;
+    border: 2px solid black;
+}
